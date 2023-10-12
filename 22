@@ -1,0 +1,22 @@
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+           Scanner scanner = new Scanner(System.in);
+
+        // Step 1: Create a Deque (LinkedList will be used as the Deque implementation)
+        Deque<Integer> deque = new LinkedList<>();
+
+        // Step 2: Add elements to the Deque
+        int input;
+        do {
+            input = scanner.nextInt();
+            if (input != -1) {
+                deque.addLast(input); // Add elements to the end of the Deque
+            }
+        } while (input != -1);
+
+        // Step 3: Print elements using Deque
+        System.out.println("Printing elements from the Deque:"+deque);
+    }
+}
